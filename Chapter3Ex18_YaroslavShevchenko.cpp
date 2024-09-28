@@ -39,6 +39,8 @@ int main()
     amount = principal * pow((1 + (rate/100) / T), T);
     interests = amount - principal;
 
+    cout << fixed << setprecision(2);
+
     cout << "Interest rate: " << setw(20) << right << rate << "%" << endl;
     cout << "Times compounded: " << setw(17) << right << T << endl;
     cout << "Principal: " << setw(24) << right << principal << endl;
